@@ -1,0 +1,22 @@
+<link rel="import" href="../bower_components/paper-input/paper-input.html" />
+<link rel="import" href="../bower_components/paper-fab/paper-fab.html" />
+
+<polymer-element name="timer-app">
+  <template>
+    <link rel="stylesheet" href="timer-app.css" />
+    <div>
+      <div>
+        <div class="header">Period in seconds</div>
+        <paper-input label="Period" id="period" value="1"></paper-input>
+      </div>
+      <div>
+        <p id="timer"></p>
+      </div>
+      <div>
+        <paper-fab class="{{ {running: running} | tokenList }}" icon="{{icon}}" on-tap="{{handleStart}}"></paper-fab>
+      </div>
+    </div>
+  </template>
+  <script src="http://mohayonao.github.io/timbre.js/timbre.js"></script>
+  <script src="timer-app.js"></script>
+</polymer-element>

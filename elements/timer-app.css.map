@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"file": "timer-app.css",
+	"sources": [
+		"../../app/elements/timer-app.sass"
+	],
+	"sourcesContent": [],
+	"mappings": "AAAA,AACE,AAAkB,AAClB,AAAO,AACT,AAAS,AACP,AAAkB,AAClB,AAAO",
+	"names": []
+}
