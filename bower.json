@@ -1,0 +1,16 @@
+{
+  "name": "tic-tac-timer",
+  "version": "0.0.1",
+  "author": "Ilya Siganov <ilya.blan4@gmail.com>",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#~0.5.4",
+    "font-roboto": "Polymer/font-roboto#~0.5.4",
+    "paper-input": "Polymer/paper-input#~0.5.4",
+    "paper-fab": "Polymer/paper-fab#~0.5.4"
+  }
+}

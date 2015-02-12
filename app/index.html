@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="application-name" content="TicTac Timer">
+  <meta name="description" content="">
+  <meta name="title" content="TicTac Timer">
+  <meta name="robots" content="all">
+  <meta name="keywords" content="tick,timer,tic-tac,metronom">
+  <meta property="og:title" content="TicTac Timer">
+  <meta property="og:description" content="">
+  <meta property="og:url" content="">
+  <meta property="og:locale" content="en_EN" />
+  <!-- favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="apple-touch-icon-precomposed" sizes="512x512" href="icons/icon512.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="icons/icon152.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="icons/icon144.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="icons/icon72.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="icons/icon57.png"/>
+  <meta name="msapplication-TileColor" content="#673AB7" />
+  <meta name="msapplication-TileImage" content="icons/icon144.png" />
+  <!-- end favicon -->
+
+  <title>TicTac Timer</title>
+
+  <!--
+  Chrome 35 has old :host behavior before :host-context addition.
+  Since Chrome 35 does not have HTMLImports, we can use this as a decent signal
+  to force the ShadowDOM Polyfill.
+  -->
+  <script type="application/javascript">
+    if (!('import' in document.createElement('link'))) {
+      var Platform = {flags: {shadow: true}};
+    }
+  </script>
+
+  <!-- build:vulcanized elements/elements.vulcanized.html -->
+  <link rel="import" href="elements/elements.html">
+  <!-- endbuild -->
+
+  <!-- build:js bower_components/webcomponentsjs/webcomponents.min.js -->
+  <script src="bower_components/webcomponentsjs/webcomponents.js"></script>
+  <!-- endbuild -->
+
+  <!-- build:css styles/app.css -->
+  <link rel="stylesheet" shim-shadowdom href="styles/app.css">
+  <!-- endbuild -->
+</head>
+
+<body>
+<template is="auto-binding">
+  <timer-app></timer-app>
+</template>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+{
+  "name": "tic-tac-timer",
+  "version": "0.0.1",
+  "author": "Ilya Siganov <ilya.blan4@gmail.com>",
+  "description": "Simple tic-tac timer.",
+  "repository": "https://github.com/blan4/TicTacTimer",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "devDependencies": {
+    "connect-livereload": "^0.5.2",
+    "grunt": "^0.4.5",
+    "grunt-autoprefixer": "^2.2.0",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-concat": "^0.5.0",
+    "grunt-contrib-connect": "^0.9.0",
+    "grunt-contrib-copy": "^0.7.0",
+    "grunt-contrib-cssmin": "^0.12.1",
+    "grunt-contrib-imagemin": "^0.9.3",
+    "grunt-contrib-jshint": "^0.11.0",
+    "grunt-contrib-uglify": "^0.7.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-gh-pages": "^0.9.1",
+    "grunt-minify-html": "^2.0.0",
+    "grunt-open": "^0.2.3",
+    "grunt-rev": "^0.1.0",
+    "grunt-sass": "^0.17.0",
+    "grunt-usemin": "^3.0.0",
+    "grunt-vulcanize": "^0.6.4",
+    "jshint-stylish": "^1.0.0",
+    "load-grunt-tasks": "^3.1.0",
+    "time-grunt": "^1.0.0"
+  }
+}
