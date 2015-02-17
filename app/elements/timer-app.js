@@ -1,9 +1,13 @@
 Polymer('timer-app', {
   icon: 'check',
   running: false,
+  instrument: 112,
+  note: 92,
 
   ready: function() {
     console.log('nya');
+    T.soundfont.setInstrument(this.instrument);
+    T.soundfont.preload(this.note);
   },
 
   handleStart: function() {
@@ -24,13 +28,10 @@ Polymer('timer-app', {
       return;
     }
 
-    var sine1 = new T("sin", {freq:440, mul:0.5});
-    var sine2 = new T("sin", {freq:660, mul:0.5});
     var cur = new Date();
+    T.soundfont.play(that.note, true);
     this.interval = setInterval(function(){
-      new T("perc", {r:500}, sine1, sine2).on("ended", function() {
-        this.pause();
-      }).bang().play();
+      T.soundfont.play(that.note, false);
       console.log(new Date() - cur);
       cur = new Date();
     }, period);
